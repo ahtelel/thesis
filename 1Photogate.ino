@@ -17,52 +17,48 @@ long baud_rate = 115200;  // use the fastest baud rate poassible.
 boolean photoGate; 
 boolean lastState = 0;
 
-int eventNum = 1; //
-long eventTime;
+int eventNum = 1; // Số lần vật đi qua cổng quang
+long eventTime; // Thời điểm vật đi qua cổng quang ứng với số lần đó kể từ khi bắt đầu bật mạch
+
 //extern volatile unsigned long timer0_millis;
 //unsigned long new_val=0;
 
 void setup()
 {
-  Serial.begin(baud_rate);         // setup Serial communication
+  Serial.begin(baud_rate);         // Có lệnh này để mở được Serial Monitor để debug
 
-  pinMode(IRDetectorPin, INPUT_PULLUP);
-  pinMode(IRLEDPin, OUTPUT);    // setup IRLEDPin as an output
-  pinMode(13, OUTPUT);          // setup debug LED as an output
+  pinMode(IRDetectorPin, INPUT_PULLUP); // Mở những chân cắm LED thu thành INPUT. PULLUP: nối với trở 5k-20k có sẵn.
+  pinMode(IRLEDPin, OUTPUT);    // Mở những chân cắm LED phát thành OUTPUT.
+  pinMode(13, OUTPUT);          // Có thể nối một LED có ánh sáng khả kiến để nó sáng lên khi cổng quanh chuyển đổi trạng thái
   
-  digitalWrite(IRLEDPin, HIGH); // turn on the IR LED
+  digitalWrite(IRLEDPin, HIGH); // Bật LED phát dùng tín hiệu HIGH
 
-  Serial.print("event");
-  Serial.print(DELIM);
-
-  Serial.print("time");
-  Serial.print(DELIM);
-
-  Serial.println("state");
-  Serial.println("======================");
+  //Serial.print("event");
+  //Serial.print(DELIM);
+  //Serial.print("time");
+  //Serial.print(DELIM);
+  //Serial.println("state");
+  //Serial.println("======================");
 
 }
 
-// the loop routine runs over and over again forever:
 void loop()
 {
-  // read the input pin:
-  photoGate = digitalRead(IRDetectorPin);  // Gate is HIGH when IR beam is broken.
-  digitalWrite(13, !photoGate); // turns on the LED if the gate is NOT broken
-  if (photoGate != lastState && photoGate != 0)  // if there is a change, 
+  // Đọc chân input:
+  photoGate = digitalRead(IRDetectorPin);  // Mất tia hồng ngoại thì LED thu sẽ báo tín hiệu HIGH
+  digitalWrite(13, !photoGate); // Vẫn còn tia hồng ngoại thì LED ở cổng 13 sẽ tắt
+  if (photoGate != lastState && photoGate != 0)  // Nếu có sự thay đổi trạng thái của cổng quang:
     {
-      eventTime = millis();
-      Serial.print(eventNum);  // print out the event number
-      Serial.print(DELIM);
-      Serial.print(eventTime / 1000.0, 3);  // print out the # of seconds 
-                            // as a floating point decimal
-      Serial.print(DELIM);
-      Serial.println(photoGate); // print out the state of the gate
-      eventNum++; // increment the eventNum
+      eventTime = millis(); // Đo eventTime ^ (đơn vị mili giây)
+      Serial.print(eventNum);  // Báo eventNum ^
+      Serial.print(DELIM); // Cách cột
+      Serial.print(eventTime / 1000.0, 3);  // Báo eventTime sau khi chia 100 và lấy 3 chứ số hàng thập phân
+      Serial.print(DELIM); // Cách cột
+      eventNum++; // Tăng eventNum lên 1
       //setMillis(new_val);
-      delay(75);
+      delay(75); // Thời gian cách mỗi lần đo 
     }
-  lastState = photoGate;
+  lastState = photoGate; // Reset lại trạng thái của cổng quang
 
 }
 //void setMillis(unsigned long new_millis)
