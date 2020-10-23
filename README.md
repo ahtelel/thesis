@@ -1,4 +1,4 @@
-# Sử dụng thiết bị thí nghiệm (thầy Chất)
+# Sử dụng thiết bị thí nghiệm trong dạy học Vật lí
 
 Ví dụ cách lắp một cổng quang (LED phát nối trở 330 ohm):
 ![](https://media.discordapp.net/attachments/467378202575241244/769147726712930334/image0.jpg)
