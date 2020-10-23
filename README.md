@@ -28,3 +28,4 @@ Phương trình sóng dừng và sơ đồ lắp cổng quang lý tưởng:
 - 1 người ghi lại thu chi etc. (Có thể không cần vì HA sẽ mua đồ hết?)
 - Bây giờ thì mọi người vẽ mô hình (hoặc mua đồ về lắp luôn) cái hệ thống cổng quang gồm ~~9343294320184~~ số lẻ cổng quang (khoảng 7 -> 13) để có cái đề trình bày với thầy Chất
 - Và hoàn thành cái bài dùng MIT App Inventor tuần trước nữa (thầy bảo mỗi đứa phải thuyết trình + cho thầy xem được app của mình hiện được số, rồi thầy sẽ xem mạch, động tay vào cảm biến etc.)
+- Có bất cập gì cứ quát thẳng vào mặt HA (hoặc đứa cần nhận quát) trên trường hoặc trên Messenger để giải quyết ok?
