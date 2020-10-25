@@ -20,12 +20,10 @@ Phương trình sóng dừng và sơ đồ lắp cổng quang lý tưởng:
 ###### Về thiết kế: (dùng với bộ sóng dừng Mỹ PASCO)
 ***Ý tưởng thiết kế của HA***
 ![](https://cdn.discordapp.com/attachments/467378202575241244/769154062347272242/image0.jpg)
-- Cổng quang sẽ có cấu tạo như thế nào? (Lắp vào bo mạch trắng rồi dựng lên hay thọc qua hộp carton để trang trí (lmao) ?)
-- Có ý tưởng thêm hay chỉnh sửa hay bớt gì thì mọi người thoải mái cùng nhau xây dựng =]
+- Cổng quang sẽ có cấu tạo như thế nào? (Lắp vào bo mạch trắng rồi dựng lên / thọc qua hộp carton để trang trí / núm vặn để đưa cổng quang lên xuống để căn chuẩn cổng x0)
+- Có ý tưởng thêm hay chỉnh sửa hay bớt gì thì mọi người thoải mái cùng nhau xây dựng
 ## Chia việc:
-- HA: Coder + Lắp mạch + BOSS
-- 1 designer + 1 đứa cùng designer xem có mua được 'cái đứa designer bảo cần' không
-- 1 người ghi lại thu chi etc. (Có thể không cần vì HA sẽ mua đồ hết?)
-- Bây giờ thì mọi người vẽ mô hình (hoặc mua đồ về lắp luôn) cái hệ thống cổng quang gồm ~~9343294320184~~ số lẻ cổng quang (khoảng 7 -> 13) để có cái đề trình bày với thầy Chất
-- Và hoàn thành cái bài dùng MIT App Inventor tuần trước nữa (thầy bảo mỗi đứa phải thuyết trình + cho thầy xem được app của mình hiện được số, rồi thầy sẽ xem mạch, động tay vào cảm biến etc.)
-- Có bất cập gì cứ quát thẳng vào mặt HA (hoặc đứa cần nhận quát) trên trường hoặc trên Messenger để giải quyết ok?
+- HA: Coder + Lắp mạch + Leader
+- 5 designers + background knowledge gatherer
+- Bây giờ thì mọi người vẽ mô hình (hoặc mua đồ về lắp luôn) cái hệ thống cổng quang gồm số lẻ cổng quang (khoảng 7 -> 13) để có cái đề trình bày với thầy Chất
+- Và hoàn thành cái bài dùng MIT App Inventor tuần trước nữa (thầy bảo mỗi đứa phải thuyết trình + cho thầy xem được app của mình hiện được số, rồi thầy sẽ xem mạch, động tay vào cảm biến etc.
