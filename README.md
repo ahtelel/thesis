@@ -1,6 +1,6 @@
 # Sử dụng thiết bị thí nghiệm trong dạy học Vật lí
 
-![Link album ảnh - clip thí nghiệm](https://www.facebook.com/media/set/?vanity=ahtelel7&set=a.1510228082482550)
+Link album ảnh - clip thí nghiệm: https://www.facebook.com/media/set/?vanity=ahtelel7&set=a.1510228082482550
 
 Ví dụ cách lắp một cổng quang (LED phát nối trở 330 ohm):
 ![](https://media.discordapp.net/attachments/467378202575241244/769147726712930334/image0.jpg)
